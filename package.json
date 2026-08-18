@@ -1,8 +1,8 @@
 {
-  "name": "@dsh-external/dsh-glass-tty",
+  "name": "dsh-glass-tty",
   "version": "0.1.0",
   "description": "GlassTTY：把 DSH 变成 1970 年代玻璃终端/笨终端风格的全屏 CRT 插件。",
-  "private": true,
+  "private": false,
   "type": "module",
   "main": "./lib/index.js",
   "exports": {
@@ -29,5 +29,22 @@
       ],
       "platform": "web"
     }
+  },
+  "author": "blyatman996",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blyatman996/Deepseek-Harness-GlassTTY.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "glass-tty",
+    "terminal",
+    "crt",
+    "plugin",
+    "retro"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
