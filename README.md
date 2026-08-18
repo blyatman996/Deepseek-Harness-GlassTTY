@@ -3,6 +3,10 @@
 > 一个让 DSH 秒变 1970 年代“玻璃电传打字机”的插件。  
 > 作者本人对“笨终端 / 玻璃终端”这个概念爱得深沉，所以把好好的现代 AI 聊天界面，硬生生塞进了一块会发光的古董 CRT 里。
 
+[![npm version](https://img.shields.io/npm/v/dsh-glass-tty.svg)](https://www.npmjs.com/package/dsh-glass-tty)
+
+> 已发布到 npm：`npm install dsh-glass-tty`
+
 ---
 
 ## 🧪 这是什么？
@@ -72,6 +76,12 @@
 ---
 
 ## 🚀 快速开始
+
+也可以通过 npm 安装：
+
+```bash
+npm install dsh-glass-tty
+```
 
 1. 把插件目录放到你的 DSH 插件收藏夹
 2. 执行：
@@ -182,6 +192,12 @@ After entering GlassTTY, you'll feel like you're not chatting with an AI, but ta
 ---
 
 ## 🚀 Quick start
+
+You can also install via npm:
+
+```bash
+npm install dsh-glass-tty
+```
 
 1. Put the plugin directory into your DSH plugin favorites
 2. Run:
