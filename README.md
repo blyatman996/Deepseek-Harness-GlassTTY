@@ -1,4 +1,4 @@
-# 📟 Deepseek Harness笨终端风格 dsh-glass-tty
+# 📟 Deepseek Harness笨终端风格 Deepseek-Harness-Glass_Teletype
 
 > 一个让 DSH 秒变 1970 年代“玻璃电传打字机”的插件。  
 > 作者本人对“笨终端 / 玻璃终端”这个概念爱得深沉，所以把好好的现代 AI 聊天界面，硬生生塞进了一块会发光的古董 CRT 里。
@@ -107,3 +107,113 @@
 - 在荧光绿屏幕前产生一种 1970 年代程序员的错觉
 
 如果出现以上症状，请按三下 `Esc` 回到现实世界。
+
+# 📟 Deepseek Harness Dumb Terminal Style Deepseek-Harness-Glass_Teletype
+
+> A plugin that instantly turns DSH into a 1970s “glass teletype”.  
+> The author has a deep and abiding love for the concept of “dumb terminals / glass terminals,” so they crammed a perfectly good modern AI chat interface into a glowing antique CRT.
+
+---
+
+## 🧪 What is this?
+
+In short: **turn DeepSeek Harness into a dumb terminal that only glows.**
+
+- No fancy Markdown
+- No sidebar, avatars, emoji
+- Only:
+  - phosphor blinking at you
+  - scan lines slowly crawling
+  - keyboard clicking and clacking
+  - and an input box pretending to be a VT100
+
+After entering GlassTTY, you'll feel like you're not chatting with an AI, but talking to a 1970s mainframe.
+
+---
+
+## ✨ Features
+
+### 🖥 Fullscreen glass terminal
+- Uses `shell.overlay` to cover DSH fullscreen
+- Sidebar, Markdown, code highlighting, emoji all “out of sight, out of mind”
+- Automatically scrolls to the last page after entering, like you just powered on and connected to the host
+
+### 🎨 Six phosphor recipes
+| Model | Color | Description |
+|---|---|---|
+| P1 | Green | Classic P1 phosphor green |
+| P2 | Blue-green | Blue-green / cyan-green look |
+| P3 | Amber | Classic P3 dark amber |
+| P4 | White | CRT cool white feel |
+| P11 | Blue-white | “Blue-white” color |
+| P22R | Dark red | “Dark red” |
+
+> Choose in settings
+
+### ⌨️ Vim-like controls
+- Normally **the input box is hidden**; the screen just acts as a quiet display
+- Press `Ctrl+;` or `Ctrl+:`: the input box pops up from the bottom
+- `Enter`: send
+- `Shift+Enter`: newline
+- `Esc`: cancel input
+- **Press `Esc` three times**: emergency escape hatch, directly exits GlassTTY
+- `Home` / `End`: go to top / bottom
+- `PageUp` / `PageDown`: strictly turn one page
+- `↑` / `↓`: strictly move one line; in the text box it will also obediently scroll with the cursor
+
+### 🧠 Information display policy
+- **Think: fully expanded** so you can see exactly what the AI is thinking
+- **Tool / Bash / Write: collapsed into a summary** — just a glance at “what it did”, not the process
+- **emoji: convert if possible, delete if not** — monochrome displays don’t deserve colored emojis
+
+---
+
+## 🕹 Command reference
+
+| Command | Action |
+|---|---|
+| `Help` / `Man` | Show Chinese help (auto-dismisses after 10 seconds, not clingy) |
+| `Exit` | Exit GlassTTY |
+| `NewConversation` | Actually creates a new conversation (not just showing you the “new conversation” screen) |
+| `LsConversation` | List conversations, ↑/↓ to select, Enter to enter, PageUp/PageDown to page |
+| `Abort` / `stop` | Shut the big model’s mouth |
+| Plain text | Sent directly to DSH |
+
+---
+
+## 🚀 Quick start
+
+1. Put the plugin directory into your DSH plugin favorites
+2. Run:
+   ```bash
+   dev_inject_plugin /path/to/dsh-glass-tty
+   ```
+3. Open DSH settings → “GlassTTY terminal mode”
+4. Pick a phosphor and flip the switch
+5. Start pretending you’re working in 1970
+
+---
+
+## 🔤 Font notes
+
+- **VT323**: SIL OFL 1.1, open source
+- **Fusion Pixel Font**: open source
+- Both fonts are **embedded in the plugin**
+
+---
+
+## 📜 License
+
+- Plugin code: BSD-3-Clause
+- Fonts: their respective open-source licenses (VT323 / Fusion Pixel Font)
+
+---
+
+## ⚠️ Disclaimer
+
+This plugin may cause:
+- excessive addiction to keyboard-driven operation
+- seeing normal web UIs and feeling “too modern, can’t stand it”
+- developing the illusion of being a 1970s programmer in front of a phosphor-green screen
+
+If you experience any of these symptoms, press `Esc` three times to return to the real world.
